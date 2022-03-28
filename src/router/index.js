@@ -11,10 +11,6 @@ const routes = [
     name: "home",
     // meta:["首页"],
     component: HomeView,
-    components: {
-      form:MyForm,
-      form2:MyForm2
-    },
     children:[
       {path:"",name:"haha",component:()=>import("../views/homes/HomeIndex.vue")},
       {path:"2-1",meta:["用户列表"],component:()=>import("../views/homes/HomeUser.vue")},
